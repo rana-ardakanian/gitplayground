@@ -1,0 +1,352 @@
+@charset "utf-8";
+/* CSS Document  for example of 1dws template  by Maryam Mahmoodi*/
+
+/* browser reset */
+
+@media all{
+	
+/* Global reset of paddings and margins for all HTML elements */
+*{  
+	padding:0;
+	margin:0;
+}
+
+
+/* Correction:margin/padding reset caused too small select boxes. */
+option{
+	padding-left:0.4em;
+}/*LTR*/
+
+select {
+	padding:1px;
+}
+
+/* (en) Global fix of the Italics bugs in IE 5.x and IE 6 */
+* html body *{
+	overflow:visible;
+}
+
+body{
+	background-color:#D7D7D7;
+	font-size:100.01%; /* Fix for rounding errors when scaling font sizes in older versions of Opera browser */
+	color:#000;
+	text-align:left; /* for LTR */
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+}
+
+div{
+	outline:0 none;
+}
+
+/* HTML 5 - adjusting visual formatting model to block level */
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+	display:block;
+}
+
+/* Clear borders for <fieldset> and <img> elements */
+fieldset, img {
+	border:0 solid;
+}
+
+/* Clear borders/outline for links when you click */
+a:active, a:href {
+ border:0 none;
+ outline:0 none;
+}
+} 
+
+@media print {
+
+.noprint {
+	display:none !important;
+}
+
+}
+
+/* < start major divs */
+div.backcontainer{ /*this is major div all DIVs inside its*/
+	width:1010px;
+	margin-left :auto;
+	margin-right:auto;
+	background-color:#F2F2F2;
+}
+
+div.backcontainer div.toolbar{ /*div.toolbar ,this div,is above all divs, outside of div.container */
+	width:auto;
+	min-height:35px;
+	background:#414141;
+}
+
+div.container{ 
+	width:970px;
+	background-color:#F2F2F2;
+	margin-right:auto;
+	margin-left: auto;
+	margin-top:  20px;
+}
+
+div.header{
+	width:auto;
+	min-height:100px;
+	padding-top: 1px;
+	margin-top:  5px;
+	border-radius:	 20px;
+	-moz-border-radius:20px;
+	background-color:#F2F2F2;
+	/*background-image: -webkit-gradient(linear, left top, left bottom, from(#C4EE44), to(#B1CDDA));
+	background-image: -webkit-linear-gradient(top, #C4EE44, #B1CDDA);
+	background-image:    -moz-linear-gradient(top, #C4EE44, #B1CDDA);
+	background-image:     -ms-linear-gradient(top, #C4EE44, #B1CDDA);
+	background-image:      -o-linear-gradient(top, #C4EE44, #B1CDDA);
+	background-image:         linear-gradient(top, #C4EE44, #B1CDDA);*/	
+}
+
+div.menu{
+	width:auto;
+	min-height:50px;
+	margin-top: 5px; 
+	border-radius:	  10px;
+	-moz-border-radius: 10px;
+	background-color:#414141;
+}
+div.mainslidshow{
+	width: auto;
+	height:auto;
+	background-color:#F2F2F2;
+	margin-top:7px;
+}
+
+div.contain{
+	width: auto;
+	height:auto;
+	margin-top:10px;
+	background-color:#F2F2F2;
+	}
+	
+div.clear{
+	overflow:hidden !important;
+	width: 0px !important;
+	height:0px !important;
+	clear:both !important;	
+}
+
+div.news{
+	width:auto;
+	margin-top:10px;
+	background-color:#F2F2F2;
+}
+	
+div.footer{
+	width :auto;
+	height:50px;
+	margin-top:10px;
+	border-radius:	 20px;
+	-moz-border-radius:20px;
+	background-color:#c7ff00;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#B1CDDA), to(#C4EE44));
+	background-image: -webkit-linear-gradient(top, #B1CDDA, #C4EE44);
+	background-image:    -moz-linear-gradient(top, #B1CDDA, #C4EE44);
+	background-image:     -ms-linear-gradient(top, #B1CDDA, #C4EE44);
+	background-image:      -o-linear-gradient(top, #B1CDDA, #C4EE44);
+	background-image:         linear-gradient(top, #B1CDDA, #C4EE44);
+}
+/* finished major divs /> */
+
+div.header h1{
+	margin-left:20px;
+	margin-top :20px;
+	text-shadow:1px 1px #12EB5E;
+}
+
+div.header img.logo{ /*1dws logo in header*/
+	margin-top:12px;
+	
+}
+
+div.menu div.search{ /*div.search */
+	float:right;
+	width:130px;
+	height:40px;
+	margin:5px 15px;
+	background-color:#202020;
+	border-radius:	 10px;
+	-moz-border-radius:10px;
+}
+
+div.mainslidshow div.slidshow{ /*div.slidshow */
+	float:left;
+	width:645px;
+	min-height:360px;
+	margin-left: 8px;
+	border-radius:	  10px;
+	-moz-border-radius: 10px;
+	background-color:#D8DEDE;
+	box-shadow:1px 3px 5px 1px #B7BEC1;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#D8DEDE), to(#f2f2f2));
+	background-image: -webkit-linear-gradient(top, #D8DEDE, #f2f2f2);
+	background-image:    -moz-linear-gradient(top, #D8DEDE, #f2f2f2);
+	background-image:     -ms-linear-gradient(top, #D8DEDE, #f2f2f2);
+	background-image:      -o-linear-gradient(top, #D8DEDE, #f2f2f2);
+	background-image:         linear-gradient(top, #D8DEDE, #f2f2f2);
+}
+
+div.mainslidshow div.Propaganda{ /*div.Propaganda is right of div.slidshow */
+	width:300px;
+	min-height:360px;
+	margin-left:661px;
+	background-color:#ACAFB9;
+	border-radius:	 10px;
+	-moz-border-radius:10px;
+	box-shadow:0px 3px 3px 1px #5C6F85;
+}
+
+div.contain div.main{
+	width :440px;
+	height:300px;
+	margin-left :215px;
+	margin-right:290px;
+	border-radius:	  10px;
+	-moz-border-radius: 10px;
+	background-color:#D8DEDE;
+	box-shadow:1px 3px 5px 1px #B7BEC1;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#D8DEDE));
+	background-image: -webkit-linear-gradient(top, #f2f2f2, #D8DEDE);
+	background-image:    -moz-linear-gradient(top, #f2f2f2, #D8DEDE);
+	background-image:     -ms-linear-gradient(top, #f2f2f2, #D8DEDE);
+	background-image:      -o-linear-gradient(top, #f2f2f2, #D8DEDE);
+	background-image:         linear-gradient(top, #f2f2f2, #D8DEDE);	
+	
+}
+
+div.contain div.mainleft{ /*div.main is between div.mainleft and div.mainright*/
+	float:left;
+	width:200px;
+	min-height:300px;
+	margin-left:8px;
+	background-color:#B00;
+	/*the white space between "border-radius:" and  "10px" just demonstrated for more classifier */
+	border-radius:	 10px;
+	-moz-border-radius:10px;
+	background-color:#D8DEDE;
+	box-shadow:1px 3px 5px 1px #B7BEC1;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#D8DEDE));
+	background-image: -webkit-linear-gradient(top, #f2f2f2, #D8DEDE);
+	background-image:    -moz-linear-gradient(top, #f2f2f2, #D8DEDE);
+	background-image:     -ms-linear-gradient(top, #f2f2f2, #D8DEDE);
+	background-image:      -o-linear-gradient(top, #f2f2f2, #D8DEDE);
+	background-image:         linear-gradient(top, #f2f2f2, #D8DEDE);
+}
+
+div.contain div.mainright{
+	float:right;
+	width:300px;
+	min-height:300px;
+	margin-right:8px;
+	background-color:#9FAEC6;
+	/*the white space between "border-radius:" and  "10px" just demonstrated for more classifier */
+	border-radius:	 10px;
+	-moz-border-radius:10px;
+	box-shadow:0px 3px 3px 1px #5C6F85;
+}
+
+div.news div.eventnews{ /*div.eventnews are exist inside the div.news */
+	float:left;
+	width:183px;
+	height:150px;
+	margin-left:8px;
+	/*the white space between "border-radius:" and  "10px" just demonstrated for more classifier */
+	border-radius:	 10px;
+	-moz-border-radius:10px;
+	background-color:#D8DEDE;
+	box-shadow:1px 3px 5px 1px #B7BEC1;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#D8DEDE));
+	background-image: -webkit-linear-gradient(top, #f2f2f2, #D8DEDE);
+	background-image:    -moz-linear-gradient(top, #f2f2f2, #D8DEDE);
+	background-image:     -ms-linear-gradient(top, #f2f2f2, #D8DEDE);
+	background-image:      -o-linear-gradient(top, #f2f2f2, #D8DEDE);
+	background-image:         linear-gradient(top, #f2f2f2, #D8DEDE);
+	/*the white space in background-image: codes  just demonstrated for more classifier */
+}
+
+div.news div.eventnews.last{
+	float:none;/* this is for stay End of div.eventnews inside div.news */
+	margin-left :auto;
+	margin-right:12px;
+	border-radius:	 10px;
+	-moz-border-radius:10px;
+}
+
+div.news div.news2{ /*this is second div.news that exist below of div.eventnews*/
+	float:left;
+	width:228px;
+	height:150px;
+	margin-left:10px;
+	background-color:#D8DEDE;
+	border-radius:	 10px;
+	-moz-border-radius:10px;
+	box-shadow:1px 3px 5px 1px #B7BEC1;	
+}
+
+div.toolbar ul {
+		width:auto;
+		margin:5px 50px;
+}
+
+div.toolbar li {
+	display:block;
+	float:left;
+	text-align:center;
+	font-size:13px;
+	margin:9px 10px;
+}
+
+div.toolbar a {
+	height:10px;
+	width: 100%;
+	color:#A2A2A2;
+	text-decoration:none;
+}
+
+div.toolbar li:hover a {
+	color:#fff;
+}
+
+div.menu ul{
+	margin:5px 5px;
+	list-style:none outside none;
+}
+
+div.menu ul li{
+	height:30px;
+	display:block;
+	float:left;
+	margin:10px;
+	border:1px solid #414141;
+}
+
+div.menu ul li a{
+	width:100%;
+	height:100%;
+	color:#A2A2A2;
+	text-align:center;
+	text-decoration:none;
+	margin:20px 5px 0px 5px;
+	border-radius:4px 4px 4px 4px;
+	-moz-border-radius:4px;
+	font-size:15px;
+}
+
+div.menu ul li:hover{
+	background-color:#585858;
+	border:1px solid #666;
+	border-radius:4px;
+	-moz-border-radius:4px;
+}
+
+div.menu ul li a:hover{
+	color:#fff;	
+}
+
+div.menu li#downmenu{
+	position:relative;
+}
